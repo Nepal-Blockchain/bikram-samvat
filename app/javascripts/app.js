@@ -25,12 +25,12 @@ var _Y ,_M ,_D ,_h, _m, _s, _ts;
 window.App = {
   start: function () {
     var self = this;
-    _Y = document.getElementById("_year").value;
-    _M = document.getElementById("_month").value;
-    _D = document.getElementById("_date").value;
-    _h = document.getElementById("_hour").value;
-    _m = document.getElementById("_min").value;
-    _s = document.getElementById("_sec").value;
+    _Y = document.getElementById("_year");
+    _M = document.getElementById("_month");
+    _D = document.getElementById("_date");
+    _h = document.getElementById("_hour");
+    _m = document.getElementById("_min");
+    _s = document.getElementById("_sec");
     _ts = document.getElementById("_timestamp");
     // Bootstrap the BikramSamvat abstraction for Use.
     BikramSamvat.setProvider(web3.currentProvider);
