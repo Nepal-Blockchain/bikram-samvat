@@ -1,5 +1,5 @@
 {
-  "name": "Solidity : Bikram Samvat",
+  "name": "solidity-bikram-samvat",
   "version": "0.0.2",
   "description": "Bikram Samvat Date/Time Library in Solidity.",
   "repository": {
