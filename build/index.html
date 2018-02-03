@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solidity Bikram Samvat Library</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+  <h1>Bikram Samvat Date/Time Library (Ethereum:Solidity)</h1>
+  <h4>Bikram Samvat : </h4> 
+  <p>(B.S./BS) is the ancient Hindu calendar used in India and Nepal. 
+  It's currently used as the official calendar in Nepal.</p>
+  <h4>Ethereum/Solidity :</h4>
+  <p><a href="https://ethereum.org" target="_blank">Ethereum</a> is an opensource blockchain-based global distributed computing platform used to run Smart Contracts aka Decentralized Applications (DApp).<br> 
+    <a href="https://solidity.readthedocs.io" target="_blank">Solidity</a> is a contract-oriented, high-level language used to  write smart contracts on Ethereum Virtual Machine (EVM)<br>
+    <em id="now"></em> </p>
+  <br>
+  <h1>Convert Bikram Samvat to Unix-Timestamp</h1>
+  <br><label for="_year">Year:</label>
+  <input type="number" id="_year" value="2065" step="1" min="2027" max="2090"></input>
+  <label for="_month">Month:</label>
+  <select type="number" id="_month">
+    <option value="1">बैशाख</option>
+    <option value="2">जेष्ठ</option>
+    <option value="3">अषाढ</option>
+    <option value="4">श्रावण</option>
+    <option value="5">भदौ</option>
+    <option value="6">असोज</option>
+    <option value="7">कार्तिक</option>
+    <option value="8">मंसिर</option>
+    <option value="9" selected>पुष</option>
+    <option value="10">माघ</option>
+    <option value="11">फाल्गुन</option>
+    <option value="12">चैत्र</option>
+  </select>
+  <label for="_date">Date:</label><input type="number" id="_date" value="20" step="1" min="1" max="32"></input>
+  <label for="_hour">Hour:</label><input type="number" id="_hour" value="00" step="1" min="0" max="23"></input>
+  <label for="_min">Minute:</label><input type="number" id="_min" value="00" step="1" min="0" max="59"></input>
+  <label for="_sec">Seconds:</label><input type="number" id="_sec" value="5" step="1" min="0" max="59"></input> 
+  <button id="convert" onclick="App.bs2ts()">Convert BS to TS</button> @ (GMT+05:45) NST
+  <br>
+  <hr>
+  <h1>Convert Unix-Timestamp to Bikram Samvat</h1>
+  <br><label for="_timestamp">Timestamp : </label>
+  <input type="number" id="_timestamp" style="width:150px" value="1231006505" step="1" min="8878500" max="2028564900"></input>
+  <button id="convert" onclick="App.ts2bs()">Convert TS to BS</button> @ (GMT+05:45) NST <br><hr>
+  <span id="result"></span>
+  <br>
+  <span id="status" class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+  <span class="hint"><strong></strong></span>
+  <br>
+  <hr>
+  <hr>
+  <hr>
+  <a href="https://twitter.com/NepalBitcoin"> @NepalBitcoin</a>     
+  
+</body>
+</html>
