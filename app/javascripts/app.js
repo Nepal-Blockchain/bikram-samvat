@@ -62,7 +62,7 @@ window.App = {
     var BS;
     BikramSamvat.deployed().then(function (instance) {
       BS = instance;
-      return BS.convertNST2TS(_Y, _M, _D, _h, _m, _s);
+      return BS.convertNST2TS(_Y.value, _M.value, _D.value, _h.value, _m.value, _s.value);
     }).then(function (data) {
       self.setStatus("Converted!!");
       _ts.value = data[7];
@@ -74,12 +74,11 @@ window.App = {
   },
   ts2bs: function () {
     var self = this;
-    var _ts = document.getElementById("_timestamp").value;
     this.setStatus("Retriving data from blockchain. (please wait)");
     var BS;
     BikramSamvat.deployed().then(function (instance) {
       BS = instance;
-      return BS.convertTS2BS(_ts);
+      return BS.convertTS2BS(_ts.value);
     }).then(function (data) {
       self.setStatus("Converted!!");
       self.setResult('TS2BS : ' + data[0] + ', ' + MONTHS[data[1] - 1] + ' ' + data[2] + ' &#x0917;&#x0924;&#x0947;, ' + DAYS[data[6]] + ' || ' + data[3] + ':' + data[4] + ':' + data[5] + ' ||' + data[7] + '<br>');
