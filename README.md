@@ -1,5 +1,4 @@
-# Bikram Samvat Date/Time Library in Solidity.
-
-Currently deployed on [Rinkeby Testnet](https://www.rinkeby.io) 
-Read contract on Etherscan :  
-[0xFAAb69F6a7D947f6c7B8A64742c28f1261A11F3f](https://rinkeby.etherscan.io/address/0xFAAb69F6a7D947f6c7B8A64742c28f1261A11F3f#readContract) 
+# [Bikram Samvat Datetime Library in Solidity](https://nepal-blockchain.github.io/bikram-samvat)
+ 
+Contract source verified on Etherscan :  
+[0x7fFa4942bfC4b25f9Bfe56e21110d9dF45C301f4](https://rinkeby.etherscan.io/address/0x7fFa4942bfC4b25f9Bfe56e21110d9dF45C301f4#code) 
