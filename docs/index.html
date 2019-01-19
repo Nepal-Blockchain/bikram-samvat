@@ -779,7 +779,7 @@ const App = {
 window.App = App
 window.addEventListener('load', async () => {
     try {
-        if (window.ethereum) {
+        /*if (window.ethereum) {
             console.log('MetaMask')
             web3 = new Web3(ethereum)
             await ethereum.enable()
@@ -787,12 +787,12 @@ window.addEventListener('load', async () => {
         } else if (window.web3) {
             console.log('current')
             web3 = new Web3(web3.currentProvider)
-        } else {
-            console.log('infura')
-            web3 = new Web3(new Web3.providers.WebsocketProvider('wss://rinkeby.infura.io/ws/v3/5070fb8309944f18aa07840da75a9da9'))
-        }
-        accounts = await web3.eth.getAccounts()
-        account = accounts[0]
+        } else {*/
+	console.log('infura')
+	web3 = new Web3(new Web3.providers.WebsocketProvider('wss://rinkeby.infura.io/ws/v3/5070fb8309944f18aa07840da75a9da9'))
+        //}
+        //accounts = await web3.eth.getAccounts()
+        account = "0x0000000000000000000000000000000000000000"
         App.start(Contracts['BikramSamvat'])
     } catch (error) {
         console.log('Web3 ', error)
